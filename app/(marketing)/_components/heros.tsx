@@ -3,7 +3,7 @@ import React from "react";
 
 const Heros = () => {
   return (
-    <div className="flex max-w-5xl flex-col items-center justify-center">
+    <div className="flex max-w-5xl flex-col items-center justify-center  dark:bg-[#1F1F1F]">
       <div className="flex items-center">
         <div className="relative h-[300px] w-[300px] sm:h-[350px] sm:w-[350px] md:h-[400px] md:w-[400px]">
           <Image
