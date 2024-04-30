@@ -71,7 +71,6 @@ export const Item = ({
 
   const onCreate = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     event.stopPropagation();
-
     if (!id) return;
 
     const promise = create({ title: "Untitled", parentDocument: id }).then(
@@ -79,7 +78,6 @@ export const Item = ({
         if (!expanded) {
           onExpand?.();
         }
-
         router.push(`/documents/${documentId}`);
       }
     );

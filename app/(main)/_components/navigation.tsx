@@ -21,17 +21,18 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { TrashBox } from "./trash-box";
 import { UserItem } from "./user-item";
+import { Navbar } from "./navbar";
 import { Item } from "./item";
 import { DocumentList } from "./document-list";
+
+import { useSearch } from "@/hooks/use-search";
+import { useSettings } from "@/hooks/use-settings";
 
 import { api } from "@/convex/_generated/api";
 
 import { cn } from "@/lib/utils";
-import { TrashBox } from "./trash-box";
-import { Navbar } from "./navbar";
-import { useSearch } from "@/hooks/use-search";
-import { useSettings } from "@/hooks/use-settings";
 
 export const Navigation = () => {
   const router = useRouter();
